@@ -1,0 +1,43 @@
+.center {
+    text-align: center
+}
+
+.darkblue {
+    background-color:rgb(10, 14, 31);
+}
+
+body {
+    background-color: rgb(1, 0, 10);
+}
+
+#textcolor {
+    color: rgb(129, 128, 154);
+}
+
+a:link {
+  color: rgb(23, 12, 91);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(49, 58, 88);
+  background-color: transparent;    
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(103, 107, 172);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(44, 47, 98);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.textcolor {
+    color: rgb(129, 128, 154);
+}

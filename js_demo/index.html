@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+    <style>
+        #textcolor {color: rgb(46, 7, 34);}
+
+        #textcolor1 {color: rgb(46, 7, 34);}
+
+        #textcolor2 {color: rgb(46, 7, 34);}
+
+        #textcolor3 {color: rgb(46, 7, 34);}
+
+        #textcolor4 {color: rgb(46, 7, 34);}
+
+        #textcolor5 {color: rgb(46, 7, 34);}
+
+        #textcolor6 {color: rgb(46, 7, 34);}
+
+        #textcolor7 {color: rgb(46, 7, 34);}
+
+        #textcolor8 {color: rgb(46, 7, 34);}
+
+        #textcolor9 {color: rgb(46, 7, 34);}
+
+    </style>
+</head>
+<body>
+   <h1 id="textcolor" style="text-align: center;">heading</h1>
+   <h2 id="textcolor1" style="text-align: center;">subheading</h2>
+   <p style="text-align: center;"><a href="https://www.google.com" terget="_blank" onclick="alert('why do you want to leave\ndont leave')">google</a></p> 
+
+   <h2 id="textcolor2">math</h2>
+   <p id="textcolor3">1 + 1 = ?</p>
+   <button onclick="document.getElementById('add').innerHTML=1+1;">click here</button>
+   <p id="add" style="color: rgb(46, 7, 34);"></p>
+
+   <h2 id="textcolor4">date and time</h2>
+   <p id="textcolor5">date and time?</p>
+   <button onclick="document.getElementById('date').innerHTML= Date()">click here</button>
+   <p class="typewriter" style="color: rgb(46, 7, 34);" id="date"></p>
+
+   <h2 id="textcolor6">changing text</h2>
+   <p id="change-text" style="color: rgb(46, 7, 34);">this will change</p>
+   <button onclick="document.getElementById('change-text').innerHTML='wow its changed'">click here</button>
+
+   <h2 id="textcolor7">function</h2>
+   <button onclick="pFunction()">click here to run a function</button>
+   <p id="p-function"></p>
+
+   <h2 id="textcolor8">returning user data</h2>
+   <button onclick="askName()">click here to enter your name</button>
+   <p style="color: rgb(46, 7, 34)" id="ask-name"></p>
+
+   <h2 id="textcolor9">js questions</h2>
+   <button onclick="askQuestion()">click here</button>
+   <p style="color: rgb(46, 7, 34)" id="question"></p>
+
+   <script>
+    alert('popup');
+
+    function askName() {
+        var nameReturn = document.getElementById('ask-name');
+        var name = prompt('enter your name' , 'here')
+        if (name=='') {
+            alert('please try again');
+        } else {
+            nameReturn.innerHTML = 'hi ' + name + '!'
+        }
+    }
+
+    function pFunction() {
+        var p = document.getElementById('p-function');
+        p.innerHTML = 'wow you just ran a function';
+        p.style.color = 'rgb(46, 7, 34)'
+    }
+   </script>
+</body>
+</html>
