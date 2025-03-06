@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>final project</title>
+    <style>
+        a:link {
+    color: rgb(121, 4, 62);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(60, 25, 50);
+    background-color: transparent;    
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: rgb(173, 16, 111);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: rgb(143, 16, 90);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  body {
+    background-color: rgb(251, 216, 233);
+}
+    </style>
+</head>
+<body>
+    <div class="center"><ul>
+        <li style="display:inline; margin-right: 10px;"><a href="index.html" style="border: 3px rgb(99, 18, 60); border-style: double; padding: 5px 10px; display: inline-block;">home</a></li>
+        <li style= "display:inline; margin-right: 10px; margin-left: 10px;"><a href="classes.html" style="border: 3px rgb(99, 18, 60); border-style: double; padding: 5px 10px; display: inline-block;">classes</a></li>
+        <li style= "display:inline; margin-right: 10px; margin-left: 10px;"><a href="interests.html" style="border: 3px rgb(99, 18, 60); border-style: double; padding: 5px 10px; display: inline-block;">interests</a></li>
+        <li style= "display:inline; margin-right: 10px; margin-left: 10px;"><a href="contact.html" style="border: 3px rgb(99, 18, 60); border-style: double; padding: 5px 10px; display: inline-block;">contact</a></li>
+        <li style= "display:inline; margin-right: 20px; margin-left: 10px;"><a href="other.html" style="border: 3px rgb(99, 18, 60); border-style: double; padding: 5px 10px; display: inline-block;">other</a></li>
+    </ul></div>
+
+    <h1 class="center" style="color:rgb(99, 18, 60)">who am i</h1>
+    <h2 style="color:rgb(99, 18, 60)">image</h2>
+    <p style="color:rgb(99, 18, 60)">here's a nice stick figure instead of an image of me:</p>
+    <img src="images/myself.png" width="100">
+    <h2 style="color:rgb(99, 18, 60)">biography</h2>
+    <p style="color:rgb(99, 18, 60)">here's some more about me. i go to Eastside Preparatory School. i am in 8th grade. i have a family; one mom, one dad, one brother. i have friends. they are nice. amigos. </p>
+    <ol style="color:rgb(99, 18, 60)">
+        <li>so im supposed to add</li>
+        <li>an ordered list</li>
+        <li>so here you go</li>
+        <li><button onclick="askName()">click here</button></li>        
+    </ol>
+    <p style="color:rgb(99, 18, 60)" id="ask-name"></p>   
+
+    <p style="color:rgb(99, 18, 60)">moving on, here's a very insightful passage that really struck me that i read this past week:</p>
+    <p style="color:rgb(99, 18, 60)">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+
+    <script>
+
+            function askName() {
+        var nameReturn = document.getElementById('ask-name');
+        var name = prompt('literally type anything' , 'here')
+        if (name=='anything') {
+            alert('please try again');
+            
+        } else if (name=='try again') {
+            alert('please try again');
+
+        } else if (name=='again') {
+            alert('please try again');
+
+        } else {
+            nameReturn.innerHTML = 'this what you entered: ' + name
+        }
+    }
+
+    alert('welcome to my webpage')
+    </script>
+    
+    
+</body>
+</html>
